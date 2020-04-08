@@ -112,6 +112,33 @@ class DesignPatternsDemoTests: XCTestCase {
     func testAbstractFactory() {
         let chineseFood = CookFactoryType.chinese.cook()
         let westernFood = CookFactoryType.western.cook()
-        print("\(chineseFood.names \(westernFood.names))")
+        print("\(chineseFood.names) \(westernFood.names)")
+    }
+    
+    func testBuilder() {
+        let tableView = UITableView(TableViewBuilder({ (builder) in
+            builder.frame = UIScreen.main.bounds
+//            builder.dataSource = self
+//            builder.delegate = self
+            builder.cells = ["ID": UITableViewCell.self]
+        }))
+    }
+    
+    func testPrototype() {
+        let cell = Cell("白细胞")
+        let newCell = cell.copy()
+    }
+    
+    func testBridge() {
+        let tvRemoteControl = RemoteControl(appliance: TV())
+        tvRemoteControl.turnOn()
+
+        let fancyVacuumCleanerRemoteControl = RemoteControl(appliance: VacuumCleaner())
+        fancyVacuumCleanerRemoteControl.turnOn()
+    }
+    
+    func testComposite() {
+        let whiteboard = Whiteboard(Circle(), Polygon())
+        whiteboard.draw(UIColor.red)
     }
 }

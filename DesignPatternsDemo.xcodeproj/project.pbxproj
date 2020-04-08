@@ -26,6 +26,11 @@
 		76B63590243C5AF60080CFF4 /* Abstract Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B6358F243C5AF60080CFF4 /* Abstract Factory.swift */; };
 		76B63592243C603A0080CFF4 /* Factory Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B63591243C603A0080CFF4 /* Factory Method.swift */; };
 		76B63594243C6B280080CFF4 /* Simple Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B63593243C6B280080CFF4 /* Simple Factory.swift */; };
+		76B63596243D771E0080CFF4 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B63595243D771E0080CFF4 /* Builder.swift */; };
+		76B63598243DA2D30080CFF4 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B63597243DA2D30080CFF4 /* Prototype.swift */; };
+		76B6359D243DAA500080CFF4 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B6359C243DAA500080CFF4 /* Adapter.swift */; };
+		76B6359F243DB09E0080CFF4 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B6359E243DB09E0080CFF4 /* Bridge.swift */; };
+		76B635A1243DC1DB0080CFF4 /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B635A0243DC1DB0080CFF4 /* Composite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		76B6358F243C5AF60080CFF4 /* Abstract Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Abstract Factory.swift"; sourceTree = "<group>"; };
 		76B63591243C603A0080CFF4 /* Factory Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Factory Method.swift"; sourceTree = "<group>"; };
 		76B63593243C6B280080CFF4 /* Simple Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Factory.swift"; sourceTree = "<group>"; };
+		76B63595243D771E0080CFF4 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		76B63597243DA2D30080CFF4 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
+		76B6359C243DAA500080CFF4 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		76B6359E243DB09E0080CFF4 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		76B635A0243DC1DB0080CFF4 /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +134,11 @@
 				76B6354E2433289A0080CFF4 /* AppDelegate.swift */,
 				76B635502433289A0080CFF4 /* SceneDelegate.swift */,
 				76B6358E243C5A160080CFF4 /* 行为型 */,
+				76B6359B243DA5AD0080CFF4 /* 构建型 */,
 				76B635522433289A0080CFF4 /* ViewController.swift */,
-				76B63593243C6B280080CFF4 /* Simple Factory.swift */,
-				76B63591243C603A0080CFF4 /* Factory Method.swift */,
-				76B6358F243C5AF60080CFF4 /* Abstract Factory.swift */,
+				76B6359E243DB09E0080CFF4 /* Bridge.swift */,
+				76B6359C243DAA500080CFF4 /* Adapter.swift */,
+				76B635A0243DC1DB0080CFF4 /* Composite.swift */,
 				76B635542433289A0080CFF4 /* Main.storyboard */,
 				76B635572433289C0080CFF4 /* Assets.xcassets */,
 				76B635592433289C0080CFF4 /* LaunchScreen.storyboard */,
@@ -167,6 +178,18 @@
 				76B63582243477100080CFF4 /* Interpreter.swift */,
 			);
 			path = "行为型";
+			sourceTree = "<group>";
+		};
+		76B6359B243DA5AD0080CFF4 /* 构建型 */ = {
+			isa = PBXGroup;
+			children = (
+				76B63593243C6B280080CFF4 /* Simple Factory.swift */,
+				76B63591243C603A0080CFF4 /* Factory Method.swift */,
+				76B6358F243C5AF60080CFF4 /* Abstract Factory.swift */,
+				76B63595243D771E0080CFF4 /* Builder.swift */,
+				76B63597243DA2D30080CFF4 /* Prototype.swift */,
+			);
+			path = "构建型";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,9 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B63598243DA2D30080CFF4 /* Prototype.swift in Sources */,
+				76B6359D243DAA500080CFF4 /* Adapter.swift in Sources */,
 				76B63592243C603A0080CFF4 /* Factory Method.swift in Sources */,
 				76B635852434779D0080CFF4 /* Iterator.swift in Sources */,
 				76B63590243C5AF60080CFF4 /* Abstract Factory.swift in Sources */,
+				76B635A1243DC1DB0080CFF4 /* Composite.swift in Sources */,
 				76B6358B2435C9D90080CFF4 /* Observer.swift in Sources */,
 				76B63583243477100080CFF4 /* Interpreter.swift in Sources */,
 				76B635532433289A0080CFF4 /* ViewController.swift in Sources */,
@@ -311,9 +337,11 @@
 				76B6358D2435D0400080CFF4 /* State& Strategy.swift in Sources */,
 				76B63594243C6B280080CFF4 /* Simple Factory.swift in Sources */,
 				76B635812433498E0080CFF4 /* Command.swift in Sources */,
+				76B6359F243DB09E0080CFF4 /* Bridge.swift in Sources */,
 				76B63589243595A70080CFF4 /* Memento.swift in Sources */,
 				76B635872434849D0080CFF4 /* Mediator.swift in Sources */,
 				76B635512433289A0080CFF4 /* SceneDelegate.swift in Sources */,
+				76B63596243D771E0080CFF4 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
