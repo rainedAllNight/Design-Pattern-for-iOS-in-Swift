@@ -26,3 +26,11 @@ class Cell: NSCopying {
            return Cell(type)
     }
 }
+
+//用法
+class PrototypeTest {
+    func testPrototype() {
+        let cell = Cell("白细胞")
+        let newCell = cell.copy()
+    }
+}

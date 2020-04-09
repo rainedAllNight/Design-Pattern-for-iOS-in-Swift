@@ -70,6 +70,20 @@ struct Trader {
 }
 
 
-
+//用法
+class CommandTest {
+    func testCommand() {
+        let saleCommand = Sale()
+        let buyCommand = Buy()
+        var trader = Trader(saleCommand, buyCommand: buyCommand, availableAmount: 1000)
+        trader.buy()
+        trader.buy()
+        print(trader.availableAmount)
+        trader.sale()
+        print(trader.availableAmount)
+        trader.undo()
+        print(trader.availableAmount)
+    }
+}
 
 

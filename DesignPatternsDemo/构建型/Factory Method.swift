@@ -59,4 +59,12 @@ struct Banana: Fruit {
 }
 
 
+//用法
+class FactoryMethodTest {
+    func testFactoryMethod() {
+        let fruit = AppleFactory.createFruit()
+        fruit.decay()
+    }
+}
+
 

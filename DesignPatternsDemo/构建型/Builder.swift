@@ -47,3 +47,15 @@ extension UITableView {
 }
 
 
+//用法
+class BuilderTest {
+    func testBuilder() {
+        let tableView = UITableView(TableViewBuilder({ (builder) in
+            builder.frame = UIScreen.main.bounds
+//            builder.dataSource = self
+//            builder.delegate = self
+            builder.cells = ["ID": UITableViewCell.self]
+        }))
+    }
+}
+

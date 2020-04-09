@@ -63,3 +63,10 @@ struct ProgrammingFactory {
     }
 }
 
+//用法
+class SimpleFactoryTest {
+    func testSimpleFactory() {
+        let programmer = ProgrammingFactory.create(.iOS)
+        print("\(programmer.coding())")
+    }
+}

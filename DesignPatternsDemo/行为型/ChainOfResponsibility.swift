@@ -113,3 +113,18 @@ struct Recruitment: Interview {
 }
 
 
+//用法
+
+class ResponsibilityTest {
+    func testForChainOfResponsibility() {
+        let jackMa = Interviewer(name: "张三", age: 27, workingExperience: 4, skills: ["Swift", "Objective-C", "Data Structure", "Network", "RxSwift"])
+        
+        //handle chain
+        let cto = CTO(next: nil)
+        let projectLeader = ProjectLeader(next: cto)
+        let hr = HR(next: projectLeader)
+        
+        let recruitment = Recruitment(hr)
+        assert(recruitment.audit(jackMa), "您已进入我司人才库")
+    }
+}

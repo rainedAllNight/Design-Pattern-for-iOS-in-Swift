@@ -63,4 +63,20 @@ struct MementoManager {
 
 
 
+//用法
+class MementoTest {
+    func testMemenot() {
+        var human = Human(age: 14, height: 140, name: "Jack", weight: 35)
+        for _ in 0..<10 {
+            human.age += 1
+            human.height += 3
+            MementoManager.save(human)
+        }
+        print("age: \(human.age) height: \(human.height)")
+        
+        ///恢复到20岁的状态
+        MementoManager.restore(&human, age: 18)
+        print("age: \(human.age) height: \(human.height)")
+    }
+}
 

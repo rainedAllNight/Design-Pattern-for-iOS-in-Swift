@@ -46,3 +46,11 @@ class Whiteboard: Shape {
     }
 }
 
+//用法
+class CompositeTest {
+    func testComposite() {
+        let whiteboard = Whiteboard(Circle(), Polygon())
+        whiteboard.draw(UIColor.red)
+    }
+}
+

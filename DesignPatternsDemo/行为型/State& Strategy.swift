@@ -78,3 +78,29 @@ struct StrategySort {
         return array
     }
 }
+
+
+//用法
+class StateTest {
+    func testState() {
+        var array: [Int] = [0, 1, 2]
+        //冒泡排序
+        var stateSort = StateSort(BubbleSort())
+        stateSort.sort(&array)
+        //选择排序
+        stateSort.stateSort = SelectionSort()
+        stateSort.sort(&array)
+    }
+}
+
+class StrategyTest {
+    func testStrategy() {
+        var array: [Int] = [0, 1, 2]
+        //冒泡排序
+        var bubbleSort = StrategySort(.bubble)
+        bubbleSort.sort(&array)
+        //选择排序
+        var selectionSort = StrategySort(.selection)
+        selectionSort.sort(&array)
+    }
+}

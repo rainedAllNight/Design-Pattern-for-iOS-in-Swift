@@ -54,5 +54,17 @@ extension PhotoAlbum: Sequence {
 }
 
 
+//用法
+class Iterator {
+    func testIterator() {
+        let album = PhotoAlbum(photos: [Photo(name: "🖼"),
+                                        Photo(name: "🐰"),
+                                        Photo(name: "🙅‍♀️")])
+        for photo in album {
+            print("view a photo: \(photo)")
+        }
+    }
+}
+
 
 

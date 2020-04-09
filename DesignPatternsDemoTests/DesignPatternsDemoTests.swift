@@ -141,4 +141,11 @@ class DesignPatternsDemoTests: XCTestCase {
         let whiteboard = Whiteboard(Circle(), Polygon())
         whiteboard.draw(UIColor.red)
     }
+    
+    func testFacade() {
+        let store = Default()
+        store["id"] = "ue29eu9"
+        let id = store["id"]
+        print(id)
+    }
 }

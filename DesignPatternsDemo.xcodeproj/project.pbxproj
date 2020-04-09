@@ -31,6 +31,8 @@
 		76B6359D243DAA500080CFF4 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B6359C243DAA500080CFF4 /* Adapter.swift */; };
 		76B6359F243DB09E0080CFF4 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B6359E243DB09E0080CFF4 /* Bridge.swift */; };
 		76B635A1243DC1DB0080CFF4 /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B635A0243DC1DB0080CFF4 /* Composite.swift */; };
+		76B635A3243DCA190080CFF4 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B635A2243DCA190080CFF4 /* Decorator.swift */; };
+		76B635A5243DCA290080CFF4 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B635A4243DCA280080CFF4 /* Facade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		76B6359C243DAA500080CFF4 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		76B6359E243DB09E0080CFF4 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		76B635A0243DC1DB0080CFF4 /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
+		76B635A2243DCA190080CFF4 /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		76B635A4243DCA280080CFF4 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +139,8 @@
 				76B635502433289A0080CFF4 /* SceneDelegate.swift */,
 				76B6358E243C5A160080CFF4 /* 行为型 */,
 				76B6359B243DA5AD0080CFF4 /* 构建型 */,
+				76B635A6243EC86E0080CFF4 /* 组合型 */,
 				76B635522433289A0080CFF4 /* ViewController.swift */,
-				76B6359E243DB09E0080CFF4 /* Bridge.swift */,
-				76B6359C243DAA500080CFF4 /* Adapter.swift */,
-				76B635A0243DC1DB0080CFF4 /* Composite.swift */,
 				76B635542433289A0080CFF4 /* Main.storyboard */,
 				76B635572433289C0080CFF4 /* Assets.xcassets */,
 				76B635592433289C0080CFF4 /* LaunchScreen.storyboard */,
@@ -190,6 +192,18 @@
 				76B63597243DA2D30080CFF4 /* Prototype.swift */,
 			);
 			path = "构建型";
+			sourceTree = "<group>";
+		};
+		76B635A6243EC86E0080CFF4 /* 组合型 */ = {
+			isa = PBXGroup;
+			children = (
+				76B6359E243DB09E0080CFF4 /* Bridge.swift */,
+				76B6359C243DAA500080CFF4 /* Adapter.swift */,
+				76B635A0243DC1DB0080CFF4 /* Composite.swift */,
+				76B635A2243DCA190080CFF4 /* Decorator.swift */,
+				76B635A4243DCA280080CFF4 /* Facade.swift */,
+			);
+			path = "组合型";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,7 +338,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				76B63598243DA2D30080CFF4 /* Prototype.swift in Sources */,
+				76B635A3243DCA190080CFF4 /* Decorator.swift in Sources */,
 				76B6359D243DAA500080CFF4 /* Adapter.swift in Sources */,
+				76B635A5243DCA290080CFF4 /* Facade.swift in Sources */,
 				76B63592243C603A0080CFF4 /* Factory Method.swift in Sources */,
 				76B635852434779D0080CFF4 /* Iterator.swift in Sources */,
 				76B63590243C5AF60080CFF4 /* Abstract Factory.swift in Sources */,

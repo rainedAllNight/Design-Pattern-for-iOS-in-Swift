@@ -58,3 +58,12 @@ enum CookFactoryType: CookFactory {
         }
     }
 }
+
+//用法
+class AbstractFactoryTest {
+    func testAbstractFactory() {
+        let chineseFood = CookFactoryType.chinese.cook()
+        let westernFood = CookFactoryType.western.cook()
+        print("\(chineseFood.names) \(westernFood.names)")
+    }
+}

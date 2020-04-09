@@ -47,3 +47,15 @@ final class VacuumCleaner: Appliance {
         print("vacuum cleaner turned on")
     }
 }
+
+
+//用法
+class BridgeTest {
+    func testBridge() {
+        let tvRemoteControl = RemoteControl(appliance: TV())
+        tvRemoteControl.turnOn()
+
+        let fancyVacuumCleanerRemoteControl = RemoteControl(appliance: VacuumCleaner())
+        fancyVacuumCleanerRemoteControl.turnOn()
+    }
+}
